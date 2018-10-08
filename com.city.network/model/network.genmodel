@@ -18,15 +18,25 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//City/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network.ecore#//City/stations"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network.ecore#//City/lines"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//City/country"/>
     </genClasses>
     <genClasses ecoreClass="network.ecore#//Station">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/office"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/nbOfTicketMachines"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/opened"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/disabledAccess"/>
     </genClasses>
     <genClasses ecoreClass="network.ecore#//Line">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/type"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference network.ecore#//Line/stations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/length"/>
+    </genClasses>
+    <genClasses ecoreClass="network.ecore#//Location">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Location/longitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Location/latitude"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
