@@ -5,3 +5,6 @@ Bundle-SymbolicName: com.city.network; singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime
+Export-Package: com.city.network,
+ com.city.network.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
