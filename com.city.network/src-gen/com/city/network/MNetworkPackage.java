@@ -5,6 +5,7 @@ package com.city.network;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -86,13 +87,22 @@ public interface MNetworkPackage extends EPackage {
 	int LOCATION__LATITUDE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Altitude</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION__ALTITUDE = 2;
+
+	/**
 	 * The number of structural features of the '<em>Location</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOCATION_FEATURE_COUNT = 2;
+	int LOCATION_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Location</em>' class.
@@ -130,6 +140,15 @@ public interface MNetworkPackage extends EPackage {
 	 * @ordered
 	 */
 	int CITY__LATITUDE = LOCATION__LATITUDE;
+
+	/**
+	 * The feature id for the '<em><b>Altitude</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CITY__ALTITUDE = LOCATION__ALTITUDE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -214,6 +233,15 @@ public interface MNetworkPackage extends EPackage {
 	int STATION__LATITUDE = LOCATION__LATITUDE;
 
 	/**
+	 * The feature id for the '<em><b>Altitude</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATION__ALTITUDE = LOCATION__ALTITUDE;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -295,13 +323,22 @@ public interface MNetworkPackage extends EPackage {
 	int STATION_FEATURE_COUNT = LOCATION_FEATURE_COUNT + 8;
 
 	/**
+	 * The operation id for the '<em>Is Node</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATION___IS_NODE = LOCATION_OPERATION_COUNT + 0;
+
+	/**
 	 * The number of operations of the '<em>Station</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATION_OPERATION_COUNT = LOCATION_OPERATION_COUNT + 0;
+	int STATION_OPERATION_COUNT = LOCATION_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link com.city.network.impl.MLineImpl <em>Line</em>}' class.
@@ -368,13 +405,31 @@ public interface MNetworkPackage extends EPackage {
 	int LINE_FEATURE_COUNT = 5;
 
 	/**
+	 * The operation id for the '<em>Next</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINE___NEXT__MSTATION = 0;
+
+	/**
+	 * The operation id for the '<em>Previous</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINE___PREVIOUS__MSTATION = 1;
+
+	/**
 	 * The number of operations of the '<em>Line</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_OPERATION_COUNT = 0;
+	int LINE_OPERATION_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link com.city.network.TransportType <em>Transport Type</em>}' enum.
@@ -549,6 +604,16 @@ public interface MNetworkPackage extends EPackage {
 	EAttribute getStation_Zone();
 
 	/**
+	 * Returns the meta object for the '{@link com.city.network.MStation#isNode() <em>Is Node</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Node</em>' operation.
+	 * @see com.city.network.MStation#isNode()
+	 * @generated
+	 */
+	EOperation getStation__IsNode();
+
+	/**
 	 * Returns the meta object for class '{@link com.city.network.MLine <em>Line</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -614,6 +679,26 @@ public interface MNetworkPackage extends EPackage {
 	EAttribute getLine_Topology();
 
 	/**
+	 * Returns the meta object for the '{@link com.city.network.MLine#next(com.city.network.MStation) <em>Next</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Next</em>' operation.
+	 * @see com.city.network.MLine#next(com.city.network.MStation)
+	 * @generated
+	 */
+	EOperation getLine__Next__MStation();
+
+	/**
+	 * Returns the meta object for the '{@link com.city.network.MLine#previous(com.city.network.MStation) <em>Previous</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Previous</em>' operation.
+	 * @see com.city.network.MLine#previous(com.city.network.MStation)
+	 * @generated
+	 */
+	EOperation getLine__Previous__MStation();
+
+	/**
 	 * Returns the meta object for class '{@link com.city.network.MLocation <em>Location</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -644,6 +729,17 @@ public interface MNetworkPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getLocation_Latitude();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.city.network.MLocation#getAltitude <em>Altitude</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Altitude</em>'.
+	 * @see com.city.network.MLocation#getAltitude()
+	 * @see #getLocation()
+	 * @generated
+	 */
+	EAttribute getLocation_Altitude();
 
 	/**
 	 * Returns the meta object for enum '{@link com.city.network.TransportType <em>Transport Type</em>}'.
@@ -805,6 +901,14 @@ public interface MNetworkPackage extends EPackage {
 		EAttribute STATION__ZONE = eINSTANCE.getStation_Zone();
 
 		/**
+		 * The meta object literal for the '<em><b>Is Node</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation STATION___IS_NODE = eINSTANCE.getStation__IsNode();
+
+		/**
 		 * The meta object literal for the '{@link com.city.network.impl.MLineImpl <em>Line</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -855,6 +959,22 @@ public interface MNetworkPackage extends EPackage {
 		EAttribute LINE__TOPOLOGY = eINSTANCE.getLine_Topology();
 
 		/**
+		 * The meta object literal for the '<em><b>Next</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation LINE___NEXT__MSTATION = eINSTANCE.getLine__Next__MStation();
+
+		/**
+		 * The meta object literal for the '<em><b>Previous</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation LINE___PREVIOUS__MSTATION = eINSTANCE.getLine__Previous__MStation();
+
+		/**
 		 * The meta object literal for the '{@link com.city.network.impl.MLocationImpl <em>Location</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -879,6 +999,14 @@ public interface MNetworkPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute LOCATION__LATITUDE = eINSTANCE.getLocation_Latitude();
+
+		/**
+		 * The meta object literal for the '<em><b>Altitude</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCATION__ALTITUDE = eINSTANCE.getLocation_Altitude();
 
 		/**
 		 * The meta object literal for the '{@link com.city.network.TransportType <em>Transport Type</em>}' enum.

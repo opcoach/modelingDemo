@@ -14,6 +14,7 @@ import com.city.network.TransportType;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -263,6 +264,15 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EOperation getStation__IsNode() {
+		return stationEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getLine() {
 		return lineEClass;
 	}
@@ -317,6 +327,24 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EOperation getLine__Next__MStation() {
+		return lineEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getLine__Previous__MStation() {
+		return lineEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getLocation() {
 		return locationEClass;
 	}
@@ -337,6 +365,15 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 	 */
 	public EAttribute getLocation_Latitude() {
 		return (EAttribute) locationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getLocation_Altitude() {
+		return (EAttribute) locationEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -401,6 +438,7 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 		createEAttribute(stationEClass, STATION__DISABLED_ACCESS);
 		createEAttribute(stationEClass, STATION__NB_OF_ELEVATORS);
 		createEAttribute(stationEClass, STATION__ZONE);
+		createEOperation(stationEClass, STATION___IS_NODE);
 
 		lineEClass = createEClass(LINE);
 		createEAttribute(lineEClass, LINE__NAME);
@@ -408,10 +446,13 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 		createEReference(lineEClass, LINE__STATIONS);
 		createEAttribute(lineEClass, LINE__LENGTH);
 		createEAttribute(lineEClass, LINE__TOPOLOGY);
+		createEOperation(lineEClass, LINE___NEXT__MSTATION);
+		createEOperation(lineEClass, LINE___PREVIOUS__MSTATION);
 
 		locationEClass = createEClass(LOCATION);
 		createEAttribute(locationEClass, LOCATION__LONGITUDE);
 		createEAttribute(locationEClass, LOCATION__LATITUDE);
+		createEAttribute(locationEClass, LOCATION__ALTITUDE);
 
 		// Create enums
 		transportTypeEEnum = createEEnum(TRANSPORT_TYPE);
@@ -483,6 +524,8 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 		initEAttribute(getStation_Zone(), ecorePackage.getEInt(), "zone", null, 0, 1, Station.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEOperation(getStation__IsNode(), ecorePackage.getEBoolean(), "isNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(lineEClass, Line.class, "Line", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLine_Name(), ecorePackage.getEString(), "name", null, 0, 1, Line.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -496,11 +539,20 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 		initEAttribute(getLine_Topology(), this.getTopology(), "topology", null, 0, 1, Line.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		EOperation op = initEOperation(getLine__Next__MStation(), this.getStation(), "next", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, this.getStation(), "station", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getLine__Previous__MStation(), this.getStation(), "previous", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getStation(), "station", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(locationEClass, Location.class, "Location", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLocation_Longitude(), ecorePackage.getEDouble(), "longitude", null, 0, 1, Location.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLocation_Latitude(), ecorePackage.getEDouble(), "latitude", null, 0, 1, Location.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLocation_Altitude(), ecorePackage.getEFloat(), "altitude", null, 0, 1, Location.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
@@ -508,6 +560,7 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 		addEEnumLiteral(transportTypeEEnum, TransportType.BUS);
 		addEEnumLiteral(transportTypeEEnum, TransportType.METRO);
 		addEEnumLiteral(transportTypeEEnum, TransportType.TRAIN);
+		addEEnumLiteral(transportTypeEEnum, TransportType.TRAMWAY);
 
 		initEEnum(topologyEEnum, Topology.class, "Topology");
 		addEEnumLiteral(topologyEEnum, Topology.LINEAR);

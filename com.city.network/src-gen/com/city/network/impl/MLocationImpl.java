@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link com.city.network.impl.MLocationImpl#getLongitude <em>Longitude</em>}</li>
  *   <li>{@link com.city.network.impl.MLocationImpl#getLatitude <em>Latitude</em>}</li>
+ *   <li>{@link com.city.network.impl.MLocationImpl#getAltitude <em>Altitude</em>}</li>
  * </ul>
  *
  * @generated
@@ -66,6 +67,26 @@ public class MLocationImpl extends MinimalEObjectImpl.Container implements Locat
 	 * @ordered
 	 */
 	protected double latitude = LATITUDE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAltitude() <em>Altitude</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAltitude()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final float ALTITUDE_EDEFAULT = 0.0F;
+
+	/**
+	 * The cached value of the '{@link #getAltitude() <em>Altitude</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAltitude()
+	 * @generated
+	 * @ordered
+	 */
+	protected float altitude = ALTITUDE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,6 +156,28 @@ public class MLocationImpl extends MinimalEObjectImpl.Container implements Locat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public float getAltitude() {
+		return altitude;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAltitude(float newAltitude) {
+		float oldAltitude = altitude;
+		altitude = newAltitude;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MNetworkPackage.LOCATION__ALTITUDE, oldAltitude,
+					altitude));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -142,6 +185,8 @@ public class MLocationImpl extends MinimalEObjectImpl.Container implements Locat
 			return getLongitude();
 		case MNetworkPackage.LOCATION__LATITUDE:
 			return getLatitude();
+		case MNetworkPackage.LOCATION__ALTITUDE:
+			return getAltitude();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -159,6 +204,9 @@ public class MLocationImpl extends MinimalEObjectImpl.Container implements Locat
 			return;
 		case MNetworkPackage.LOCATION__LATITUDE:
 			setLatitude((Double) newValue);
+			return;
+		case MNetworkPackage.LOCATION__ALTITUDE:
+			setAltitude((Float) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -178,6 +226,9 @@ public class MLocationImpl extends MinimalEObjectImpl.Container implements Locat
 		case MNetworkPackage.LOCATION__LATITUDE:
 			setLatitude(LATITUDE_EDEFAULT);
 			return;
+		case MNetworkPackage.LOCATION__ALTITUDE:
+			setAltitude(ALTITUDE_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -194,6 +245,8 @@ public class MLocationImpl extends MinimalEObjectImpl.Container implements Locat
 			return longitude != LONGITUDE_EDEFAULT;
 		case MNetworkPackage.LOCATION__LATITUDE:
 			return latitude != LATITUDE_EDEFAULT;
+		case MNetworkPackage.LOCATION__ALTITUDE:
+			return altitude != ALTITUDE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -213,6 +266,8 @@ public class MLocationImpl extends MinimalEObjectImpl.Container implements Locat
 		result.append(longitude);
 		result.append(", latitude: ");
 		result.append(latitude);
+		result.append(", altitude: ");
+		result.append(altitude);
 		result.append(')');
 		return result.toString();
 	}

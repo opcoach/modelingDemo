@@ -8,6 +8,7 @@ import com.city.network.Station;
 import com.city.network.Topology;
 import com.city.network.TransportType;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -250,6 +251,28 @@ public class MLineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Station next(Station station) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Station previous(Station station) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -343,6 +366,22 @@ public class MLineImpl extends MinimalEObjectImpl.Container implements Line {
 			return topology != TOPOLOGY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+		case MNetworkPackage.LINE___NEXT__MSTATION:
+			return next((Station) arguments.get(0));
+		case MNetworkPackage.LINE___PREVIOUS__MSTATION:
+			return previous((Station) arguments.get(0));
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

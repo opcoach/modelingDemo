@@ -10,7 +10,8 @@
       <!-- @generated network -->
       <package
             uri="http://com.city.network/1.0"
-            class="com.city.network.MNetworkPackage"/>
+            class="com.city.network.MNetworkPackage"
+            genModel="model/network.genmodel"/>
    </extension>
 
 </plugin>

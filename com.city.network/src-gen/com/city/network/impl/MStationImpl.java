@@ -6,6 +6,7 @@ import com.city.network.MNetworkPackage;
 import com.city.network.Station;
 import com.city.network.TransportType;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -375,6 +376,17 @@ public class MStationImpl extends LocationImpl implements Station {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean isNode() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -498,6 +510,20 @@ public class MStationImpl extends LocationImpl implements Station {
 			return zone != ZONE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+		case MNetworkPackage.STATION___IS_NODE:
+			return isNode();
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

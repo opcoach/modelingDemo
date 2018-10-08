@@ -46,7 +46,16 @@ public enum TransportType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	TRAIN(2, "TRAIN", "train");
+	TRAIN(2, "TRAIN", "train"),
+	/**
+	* The '<em><b>TRAMWAY</b></em>' literal object.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #TRAMWAY_VALUE
+	* @generated
+	* @ordered
+	*/
+	TRAMWAY(3, "TRAMWAY", "tramway");
 
 	/**
 	 * The '<em><b>BUS</b></em>' literal value.
@@ -94,12 +103,27 @@ public enum TransportType implements Enumerator {
 	public static final int TRAIN_VALUE = 2;
 
 	/**
+	 * The '<em><b>TRAMWAY</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>TRAMWAY</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #TRAMWAY
+	 * @model literal="tramway"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int TRAMWAY_VALUE = 3;
+
+	/**
 	 * An array of all the '<em><b>Transport Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final TransportType[] VALUES_ARRAY = new TransportType[] { BUS, METRO, TRAIN, };
+	private static final TransportType[] VALUES_ARRAY = new TransportType[] { BUS, METRO, TRAIN, TRAMWAY, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Transport Type</b></em>' enumerators.
@@ -161,6 +185,8 @@ public enum TransportType implements Enumerator {
 			return METRO;
 		case TRAIN_VALUE:
 			return TRAIN;
+		case TRAMWAY_VALUE:
+			return TRAMWAY;
 		}
 		return null;
 	}

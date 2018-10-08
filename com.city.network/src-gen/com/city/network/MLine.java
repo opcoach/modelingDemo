@@ -153,4 +153,26 @@ public interface MLine extends EObject {
 	 */
 	void setTopology(Topology value);
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * This operation returns the next station on the line according to the opened status of stations or null if none
+	 * <!-- end-model-doc -->
+	 * @model
+	 * @generated
+	 */
+	Station next(Station station);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * This operation returns the previous station on the line according to the opened status of stations, or null if none.
+	 * <!-- end-model-doc -->
+	 * @model
+	 * @generated
+	 */
+	Station previous(Station station);
+
 } // MLine

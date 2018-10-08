@@ -228,4 +228,15 @@ public interface MStation extends Location {
 	 */
 	void setZone(int value);
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * returns true if this station is on different lines.
+	 * <!-- end-model-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	boolean isNode();
+
 } // MStation
