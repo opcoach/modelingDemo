@@ -10,6 +10,11 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="country" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Station" eSuperTypes="#//Location">
+    <eOperations name="isNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="returns true if this station is on different lines."/>
+      </eAnnotations>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" upperBound="3"
         eType="#//TransportType"/>
@@ -21,6 +26,18 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="zone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Line">
+    <eOperations name="next" eType="#//Station">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="This operation returns the next station on the line according to the opened status of stations or null if none"/>
+      </eAnnotations>
+      <eParameters name="station" eType="#//Station"/>
+    </eOperations>
+    <eOperations name="previous" eType="#//Station">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="This operation returns the previous station on the line according to the opened status of stations, or null if none."/>
+      </eAnnotations>
+      <eParameters name="station" eType="#//Station"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TransportType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stations" upperBound="-1"
@@ -41,10 +58,12 @@
     <eLiterals name="BUS" literal="bus"/>
     <eLiterals name="METRO" value="1" literal="metro"/>
     <eLiterals name="TRAIN" value="2" literal="train"/>
+    <eLiterals name="TRAMWAY" value="3" literal="tramway"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Location">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="longitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="altitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Topology">
     <eLiterals name="LINEAR" value="1" literal="linear"/>

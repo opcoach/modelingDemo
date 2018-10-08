@@ -15,6 +15,7 @@
       <genEnumLiterals ecoreEnumLiteral="network.ecore#//TransportType/BUS"/>
       <genEnumLiterals ecoreEnumLiteral="network.ecore#//TransportType/METRO"/>
       <genEnumLiterals ecoreEnumLiteral="network.ecore#//TransportType/TRAIN"/>
+      <genEnumLiterals ecoreEnumLiteral="network.ecore#//TransportType/TRAMWAY"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="network.ecore#//Topology">
       <genEnumLiterals ecoreEnumLiteral="network.ecore#//Topology/LINEAR"/>
@@ -35,6 +36,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/disabledAccess"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/nbOfElevators"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/zone"/>
+      <genOperations ecoreOperation="network.ecore#//Station/isNode"/>
     </genClasses>
     <genClasses ecoreClass="network.ecore#//Line">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/name"/>
@@ -42,10 +44,17 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference network.ecore#//Line/stations"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/length"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/topology"/>
+      <genOperations ecoreOperation="network.ecore#//Line/next">
+        <genParameters ecoreParameter="network.ecore#//Line/next/station"/>
+      </genOperations>
+      <genOperations ecoreOperation="network.ecore#//Line/previous">
+        <genParameters ecoreParameter="network.ecore#//Line/previous/station"/>
+      </genOperations>
     </genClasses>
     <genClasses ecoreClass="network.ecore#//Location">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Location/longitude"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Location/latitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Location/altitude"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
