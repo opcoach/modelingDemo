@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network:City
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:network="http://com.city.network/1.0"
+    xsi:schemaLocation="http://com.city.network/1.0 network.ecore"
+    longitude="1.444209"
+    latitude="43.604652"
+    name="Toulouse"
+    country="France">
+  <stations
+      longitude="1.448437"
+      latitude="43.605566"
+      name="Jean Jaures"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <stations
+      longitude="1.44547"
+      latitude="43.604599"
+      name="Capitole"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <stations
+      name="Esquirol"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <stations
+      name="Saint Cyprien"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <stations
+      name="Patte d'oie"
+      office="true"
+      nbOfTicketMachines="2"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="1">
+    <type>metro</type>
+  </stations>
+  <stations
+      name="Arenes"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <stations
+      name="Francois Verdier"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <stations
+      name="Carmes"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <stations
+      name="Palais de Justice"
+      office="true"
+      nbOfTicketMachines="4"
+      opened="true"
+      disabledAccess="true"
+      nbOfElevators="2">
+    <type>metro</type>
+  </stations>
+  <lines name="A"
+      type="metro"
+      stations="//@stations.5 //@stations.4 //@stations.3 //@stations.2 //@stations.1 //@stations.0"/>
+  <lines name="B"
+      type="metro"
+      stations="//@stations.0 //@stations.6 //@stations.7 //@stations.8"/>
+</network:City>
