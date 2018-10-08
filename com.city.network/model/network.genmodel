@@ -5,7 +5,8 @@
     editDirectory="/com.city.network.edit/src-gen" editorDirectory="/com.city.network.editor/src-gen"
     modelPluginID="com.city.network" modelName="Network" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="10.0"
-    copyrightFields="false" operationReflection="true" importOrganizing="true">
+    copyrightFields="false" interfaceNamePattern="M{0}" classNamePattern="M{0}Impl"
+    operationReflection="true">
   <foreignModel>network.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Network" basePackage="com.city" disposableProviderFactory="true"
@@ -13,6 +14,11 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="network.ecore#//TransportType">
       <genEnumLiterals ecoreEnumLiteral="network.ecore#//TransportType/BUS"/>
       <genEnumLiterals ecoreEnumLiteral="network.ecore#//TransportType/METRO"/>
+      <genEnumLiterals ecoreEnumLiteral="network.ecore#//TransportType/TRAIN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="network.ecore#//Topology">
+      <genEnumLiterals ecoreEnumLiteral="network.ecore#//Topology/LINEAR"/>
+      <genEnumLiterals ecoreEnumLiteral="network.ecore#//Topology/CIRCULAR"/>
     </genEnums>
     <genClasses ecoreClass="network.ecore#//City">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//City/name"/>
@@ -27,12 +33,15 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/nbOfTicketMachines"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/opened"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/disabledAccess"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/nbOfElevators"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Station/zone"/>
     </genClasses>
     <genClasses ecoreClass="network.ecore#//Line">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/type"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference network.ecore#//Line/stations"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Line/topology"/>
     </genClasses>
     <genClasses ecoreClass="network.ecore#//Location">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network.ecore#//Location/longitude"/>
