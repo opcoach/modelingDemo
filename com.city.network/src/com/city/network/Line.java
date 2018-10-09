@@ -8,5 +8,12 @@ public interface Line extends MLine
 	//
 	// For instance : 
 	// default public void addSomething(Something foo) {} ;
+	
+	
+	/** Check if all stations are available for disabled people 
+	 * 
+	 * @return true if All stations are accessible
+	 */
+	default public boolean disabledAccessible() { return false; }
 
 }
