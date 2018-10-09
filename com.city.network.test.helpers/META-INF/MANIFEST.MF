@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Helpers
+Bundle-SymbolicName: com.city.network.test.helpers
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: CITY
+Automatic-Module-Name: com.city.network.test.helpers
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.city.network;bundle-version="0.1.0"
+Export-Package: com.city.network.test.helpers
