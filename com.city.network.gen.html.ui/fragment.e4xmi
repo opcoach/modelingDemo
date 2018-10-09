@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_IQpAUMuxEeiektJnY7DpWQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_JCkzkMuxEeiektJnY7DpWQ" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_LMGr4MuxEeiektJnY7DpWQ" elementId="com.city.network.gen.html.ui.generateHtml" commandName="Generate the HTML Code"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_PCg8wMuxEeiektJnY7DpWQ" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_Q0w9gMuxEeiektJnY7DpWQ" elementId="com.city.network.gen.html.ui.handler.0" contributionURI="bundleclass://com.city.network.gen.html.ui/com.city.network.gen.html.ui.GenerateHtmlHandler" command="_LMGr4MuxEeiektJnY7DpWQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_PdjS8MuxEeiektJnY7DpWQ" featurename="menuContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_UPBd4MuxEeiektJnY7DpWQ" elementId="com.city.network.gen.html.ui.menucontribution.0" positionInParent="after=additions" parentId="com.city.network.presentation.NetworkEditorID">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_9N1S0MuzEeiektJnY7DpWQ" elementId="com.city.network.gen.html.ui.handledmenuitem.0" command="_LMGr4MuxEeiektJnY7DpWQ"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
