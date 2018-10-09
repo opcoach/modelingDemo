@@ -3,6 +3,11 @@
  */
 package com.city.network.xtext.validation
 
+import com.city.network.Line
+import com.city.network.NetworkPackage
+import com.city.network.Topology
+import org.eclipse.xtext.validation.Check
+import com.city.network.MNetworkPackage
 
 /**
  * This class contains custom validation rules. 
@@ -10,6 +15,8 @@ package com.city.network.xtext.validation
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#validation
  */
 class CityDslValidator extends AbstractCityDslValidator {
+	
+		public static val NOT_CIRCULAR = 'notCircular'
 	
 //	public static val INVALID_NAME = 'invalidName'
 //
@@ -21,5 +28,16 @@ class CityDslValidator extends AbstractCityDslValidator {
 //					INVALID_NAME)
 //		}
 //	}
+	
+	@Check
+	def checkCircular(Line l)
+	{
+		
+		if (l.topology == Topology.CIRCULAR && l.stations.head != l.stations.last)
+		  warning('A circular line must have the same first and last stations', 
+		  	MNetworkPackage.Literals.LINE__STATIONS, NOT_CIRCULAR)
+		  
+		
+	}
 	
 }

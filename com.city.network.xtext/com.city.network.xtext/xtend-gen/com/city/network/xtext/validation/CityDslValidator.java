@@ -3,7 +3,14 @@
  */
 package com.city.network.xtext.validation;
 
+import com.city.network.Line;
+import com.city.network.MNetworkPackage;
+import com.city.network.Station;
+import com.city.network.Topology;
 import com.city.network.xtext.validation.AbstractCityDslValidator;
+import com.google.common.base.Objects;
+import org.eclipse.xtext.validation.Check;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 /**
  * This class contains custom validation rules.
@@ -12,4 +19,13 @@ import com.city.network.xtext.validation.AbstractCityDslValidator;
  */
 @SuppressWarnings("all")
 public class CityDslValidator extends AbstractCityDslValidator {
+  public final static String NOT_CIRCULAR = "notCircular";
+  
+  @Check
+  public void checkCircular(final Line l) {
+    if ((Objects.equal(l.getTopology(), Topology.CIRCULAR) && (!Objects.equal(IterableExtensions.<Station>head(l.getStations()), IterableExtensions.<Station>last(l.getStations()))))) {
+      this.warning("A circular line must have the same first and last stations", 
+        MNetworkPackage.Literals.LINE__STATIONS, CityDslValidator.NOT_CIRCULAR);
+    }
+  }
 }
