@@ -532,8 +532,8 @@ public class MNetworkPackageImpl extends EPackageImpl implements MNetworkPackage
 		initEAttribute(getLine_Type(), this.getTransportType(), "type", null, 0, 1, Line.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getLine_Stations(), this.getStation(), null, "stations", null, 0, -1, Line.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEAttribute(getLine_Length(), ecorePackage.getEFloat(), "length", null, 0, 1, Line.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLine_Topology(), this.getTopology(), "topology", null, 0, 1, Line.class, !IS_TRANSIENT,

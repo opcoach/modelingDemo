@@ -48,13 +48,13 @@ public enum TransportType implements Enumerator {
 	 */
 	TRAIN(2, "TRAIN", "train"),
 	/**
-	* The '<em><b>TRAMWAY</b></em>' literal object.
-	* <!-- begin-user-doc -->
+	 * The '<em><b>TRAMWAY</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @see #TRAMWAY_VALUE
-	* @generated
-	* @ordered
-	*/
+	 * @see #TRAMWAY_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	TRAMWAY(3, "TRAMWAY", "tramway");
 
 	/**

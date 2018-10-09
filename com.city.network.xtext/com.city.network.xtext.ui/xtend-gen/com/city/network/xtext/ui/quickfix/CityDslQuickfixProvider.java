@@ -3,7 +3,16 @@
  */
 package com.city.network.xtext.ui.quickfix;
 
+import com.city.network.Line;
+import com.city.network.Topology;
+import com.city.network.xtext.validation.CityDslValidator;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.ui.editor.model.edit.IModificationContext;
+import org.eclipse.xtext.ui.editor.model.edit.ISemanticModification;
 import org.eclipse.xtext.ui.editor.quickfix.DefaultQuickfixProvider;
+import org.eclipse.xtext.ui.editor.quickfix.Fix;
+import org.eclipse.xtext.ui.editor.quickfix.IssueResolutionAcceptor;
+import org.eclipse.xtext.validation.Issue;
 
 /**
  * Custom quickfixes.
@@ -12,4 +21,14 @@ import org.eclipse.xtext.ui.editor.quickfix.DefaultQuickfixProvider;
  */
 @SuppressWarnings("all")
 public class CityDslQuickfixProvider extends DefaultQuickfixProvider {
+  @Fix(CityDslValidator.NOT_CIRCULAR)
+  public void setLineLinear(final Issue issue, final IssueResolutionAcceptor acceptor) {
+    acceptor.accept(issue, "Set the Line Linear", "Set the type to linear.", null, new ISemanticModification() {
+      @Override
+      public void apply(final EObject element, final IModificationContext context) throws Exception {
+        final Line l = ((Line) element);
+        l.setTopology(Topology.LINEAR);
+      }
+    });
+  }
 }

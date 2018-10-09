@@ -93,7 +93,7 @@ public interface MLine extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Stations</em>' reference list.
 	 * @see com.city.network.MNetworkPackage#getLine_Stations()
-	 * @model
+	 * @model ordered="false"
 	 * @generated
 	 */
 	EList<Station> getStations();

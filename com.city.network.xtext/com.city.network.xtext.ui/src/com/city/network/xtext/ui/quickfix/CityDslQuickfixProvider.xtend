@@ -3,22 +3,37 @@
  */
 package com.city.network.xtext.ui.quickfix
 
+import com.city.network.City
+import com.city.network.Line
+import com.city.network.xtext.validation.CityDslValidator
+import java.util.ArrayList
+import org.eclipse.emf.ecore.EObject
+import org.eclipse.xtext.ui.editor.model.edit.IModificationContext
+import org.eclipse.xtext.ui.editor.model.edit.ISemanticModification
 import org.eclipse.xtext.ui.editor.quickfix.DefaultQuickfixProvider
+import org.eclipse.xtext.ui.editor.quickfix.Fix
+import org.eclipse.xtext.ui.editor.quickfix.IssueResolutionAcceptor
+import org.eclipse.xtext.validation.Issue
+import com.city.network.Topology
 
 /**
  * Custom quickfixes.
- *
+ * 
  * See https://www.eclipse.org/Xtext/documentation/310_eclipse_support.html#quick-fixes
  */
 class CityDslQuickfixProvider extends DefaultQuickfixProvider {
 
-//	@Fix(CityDslValidator.INVALID_NAME)
-//	def capitalizeName(Issue issue, IssueResolutionAcceptor acceptor) {
-//		acceptor.accept(issue, 'Capitalize name', 'Capitalize the name.', 'upcase.png') [
-//			context |
-//			val xtextDocument = context.xtextDocument
-//			val firstLetter = xtextDocument.get(issue.offset, 1)
-//			xtextDocument.replace(issue.offset, 1, firstLetter.toUpperCase)
-//		]
-//	}
+
+	@Fix(CityDslValidator.NOT_CIRCULAR)
+	def setLineLinear(Issue issue, IssueResolutionAcceptor acceptor) {
+		acceptor.accept(issue, 'Set the Line Linear', 'Set the type to linear.', null, new ISemanticModification() {
+
+			override apply(EObject element, IModificationContext context) throws Exception {
+				val  l = element as Line
+				l.topology = Topology.LINEAR
+			}
+		})
+
+	}
+
 }
