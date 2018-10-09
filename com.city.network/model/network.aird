@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:network="http://com.city.network/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://com.city.network/1.0 network.ecore http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_0DHv0Ms8Eei9jJncee9CKw" selectedViews="_0aqtIMs8Eei9jJncee9CKw _O3G20MvZEeiLOr2HQt9f_g" version="13.0.0.201804031646">
     <semanticResources>network.ecore</semanticResources>
     <semanticResources>network.genmodel</semanticResources>
@@ -13,6 +13,10 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_O3G20MvZEeiLOr2HQt9f_g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_UlUHEMvqEeiFVY15FFOcVg" name="new City Network" repPath="#_UitfAMvqEeiFVY15FFOcVg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']"/>
+        <target xmi:type="network:City" href="Toulouse.xmi#/"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
   <diagram:DSemanticDiagram xmi:id="_0f7noMs8Eei9jJncee9CKw" name="network" uid="_0ckKkMs8Eei9jJncee9CKw">
@@ -624,5 +628,639 @@
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
     <target xmi:type="ecore:EPackage" href="network.ecore#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_UlP1oMvqEeiFVY15FFOcVg" name="new City Network" uid="_UitfAMvqEeiFVY15FFOcVg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_UlP1ocvqEeiFVY15FFOcVg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_UlP1osvqEeiFVY15FFOcVg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Um73sMvqEeiFVY15FFOcVg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_Um8ewMvqEeiFVY15FFOcVg" type="Sirius" element="_UlP1oMvqEeiFVY15FFOcVg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_Un79QMvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1pMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UoUXwMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UoUXwcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Upe1YMvqEeiFVY15FFOcVg" type="3003" element="_UlP1pcvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Upe1YcvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Upe1YsvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Un79QcvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Un79QsvqEeiFVY15FFOcVg" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpCJcMvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1psvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UpCJc8vqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UpCJdMvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Upe1Y8vqEeiFVY15FFOcVg" type="3003" element="_UlP1p8vqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Upe1ZMvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Upe1ZcvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpCJccvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpCJcsvqEeiFVY15FFOcVg" x="90" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpCJdcvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1qMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UpDXkMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UpDXkcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UpfccMvqEeiFVY15FFOcVg" type="3003" element="_UlP1qcvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UpfcccvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpfccsvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpCJdsvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpCJd8vqEeiFVY15FFOcVg" x="180" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpIQEMvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1qsvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UpKsUMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UpKsUcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UphRoMvqEeiFVY15FFOcVg" type="3003" element="_UlP1q8vqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UphRocvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UphRosvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpKFQMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpKFQcvqEeiFVY15FFOcVg" x="270" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpL6cMvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1rMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UpL6c8vqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UpL6dMvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Upjt4MvqEeiFVY15FFOcVg" type="3003" element="_UlP1rcvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Upjt4cvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Upjt4svqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpL6ccvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpL6csvqEeiFVY15FFOcVg" x="360" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpMhgMvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1rsvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UpMhg8vqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UpMhhMvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UpqbkMvqEeiFVY15FFOcVg" type="3003" element="_UlP1r8vqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UpqbkcvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpqbksvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpMhgcvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpMhgsvqEeiFVY15FFOcVg" x="450" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpQy8MvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1sMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UpYuwMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UpYuwcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UpsQwMvqEeiFVY15FFOcVg" type="3003" element="_UlP1scvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UpsQwcvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpsQwsvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpQy8cvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpQy8svqEeiFVY15FFOcVg" x="540" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpZ84MvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1ssvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_Upaj8MvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Upaj8cvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Ups30MvqEeiFVY15FFOcVg" type="3003" element="_UlP1s8vqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Ups30cvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ups30svqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpZ84cvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpZ84svqEeiFVY15FFOcVg" x="630" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UpcZIMvqEeiFVY15FFOcVg" visible="false" type="2001" element="_UlP1tMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_UpdnQMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UpdnQcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Upv7IMvqEeiFVY15FFOcVg" type="3003" element="_UlP1tcvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Upv7IcvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Upv7IsvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_UpcZIcvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpcZIsvqEeiFVY15FFOcVg" x="720" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_miZXsMvqEeiFVY15FFOcVg" type="2001" element="_mhc8gMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_miZ-wMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_miZ-wcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mipPUsvqEeiFVY15FFOcVg" type="3003" element="_mhdjkMvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mipPU8vqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mipPVMvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_miZXscvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_miZXssvqEeiFVY15FFOcVg" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_miZ-wsvqEeiFVY15FFOcVg" type="2001" element="_mheKoMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mibz8MvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mibz8cvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mirrkMvqEeiFVY15FFOcVg" type="3003" element="_mheKocvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mirrkcvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mirrksvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_miZ-w8vqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_miZ-xMvqEeiFVY15FFOcVg" x="110" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_midpIMvqEeiFVY15FFOcVg" type="2001" element="_mheKosvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mieQMMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mieQMcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_misSoMvqEeiFVY15FFOcVg" type="3003" element="_mhf_0MvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_misSocvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_misSosvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_midpIcvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_midpIsvqEeiFVY15FFOcVg" x="220" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mieQMsvqEeiFVY15FFOcVg" type="2001" element="_mhgm4MvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_migscsvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_migsc8vqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_misSo8vqEeiFVY15FFOcVg" type="3003" element="_mhjDIMvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_misSpMvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_misSpcvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_migscMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_migsccvqEeiFVY15FFOcVg" x="330" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mihTgMvqEeiFVY15FFOcVg" type="2001" element="_mhmtgMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mijIsMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mijIscvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_misSpsvqEeiFVY15FFOcVg" type="3003" element="_mhmtgcvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_misSp8vqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_misSqMvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mihTgcvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mihTgsvqEeiFVY15FFOcVg" x="440" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mijIssvqEeiFVY15FFOcVg" type="2001" element="_mhoisMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mijvwMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mijvwcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_miuu4MvqEeiFVY15FFOcVg" type="3003" element="_mhoiscvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_miuu4cvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_miuu4svqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mijIs8vqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mijItMvqEeiFVY15FFOcVg" x="550" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mikW0MvqEeiFVY15FFOcVg" type="2001" element="_mhoissvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mimzEMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mimzEcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mivV8MvqEeiFVY15FFOcVg" type="3003" element="_mhois8vqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mivV8cvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mivV8svqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mikW0cvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mikW0svqEeiFVY15FFOcVg" x="660" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_minaIMvqEeiFVY15FFOcVg" type="2001" element="_mhupUMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mioBMMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mioBMcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mixLIMvqEeiFVY15FFOcVg" type="3003" element="_mhupUcvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mixLIcvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mixLIsvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_minaIcvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_minaIsvqEeiFVY15FFOcVg" x="770" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mioBMsvqEeiFVY15FFOcVg" type="2001" element="_mhvQYMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mioBNcvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mioBNsvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mi2DoMvqEeiFVY15FFOcVg" type="3003" element="_mhyTsMvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mi2DocvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mi2DosvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mioBM8vqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mioBNMvqEeiFVY15FFOcVg" x="880" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mioBN8vqEeiFVY15FFOcVg" type="2001" element="_mh6PgMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mioBOsvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mioBO8vqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mi2qsMvqEeiFVY15FFOcVg" type="3016" element="_mh7doMvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mi2qscvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mi2qssvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mioBOMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mioBOcvqEeiFVY15FFOcVg" x="990" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mioBPMvqEeiFVY15FFOcVg" type="2001" element="_miJgEMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_mipPUMvqEeiFVY15FFOcVg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mipPUcvqEeiFVY15FFOcVg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mi2qs8vqEeiFVY15FFOcVg" type="3016" element="_miJgEcvqEeiFVY15FFOcVg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mi2qtMvqEeiFVY15FFOcVg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mi2qtcvqEeiFVY15FFOcVg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mioBPcvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mioBPsvqEeiFVY15FFOcVg" x="1080" width="30" height="30"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_Um8ewcvqEeiFVY15FFOcVg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_2s7soMvqEeiFVY15FFOcVg" type="4001" element="_2pHjoMvqEeiFVY15FFOcVg" source="_mioBN8vqEeiFVY15FFOcVg" target="_mijIssvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2tCaUMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2tCaUcvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2tDBYMvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2tDBYcvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2tDocMvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2tDoccvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2s7socvqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2s7sosvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2s7so8vqEeiFVY15FFOcVg" points="[-15, 0, 415, -10]$[-405, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uMQ4MvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uMQ4cvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2uM38MvqEeiFVY15FFOcVg" type="4001" element="_2pjogMvqEeiFVY15FFOcVg" source="_mioBN8vqEeiFVY15FFOcVg" target="_mihTgMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2uSXgMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uSXgcvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uSXgsvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uSXg8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uSXhMvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uSXhcvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2uM38cvqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uM38svqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2uM388vqEeiFVY15FFOcVg" points="[-15, 0, 525, -10]$[-515, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uS-kMvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uS-kcvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2uS-ksvqEeiFVY15FFOcVg" type="4001" element="_2pjog8vqEeiFVY15FFOcVg" source="_mioBN8vqEeiFVY15FFOcVg" target="_mieQMsvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2uUMsMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uUMscvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uUMssvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uUMs8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uUMtMvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uUMtcvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2uS-k8vqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uS-lMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2uS-lcvqEeiFVY15FFOcVg" points="[-15, 0, 635, -10]$[-625, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uUzwMvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uUzwcvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2uUzwsvqEeiFVY15FFOcVg" type="4001" element="_2pldsMvqEeiFVY15FFOcVg" source="_mioBN8vqEeiFVY15FFOcVg" target="_midpIMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2uUzxsvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uUzx8vqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uUzyMvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uUzycvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uUzysvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uUzy8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2uUzw8vqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uUzxMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2uUzxcvqEeiFVY15FFOcVg" points="[-15, 0, 745, -10]$[-735, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uWo8MvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uWo8cvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2uXQAMvqEeiFVY15FFOcVg" type="4001" element="_2plds8vqEeiFVY15FFOcVg" source="_mioBN8vqEeiFVY15FFOcVg" target="_miZ-wsvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2uZFMMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uZFMcvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uZFMsvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uZFM8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uZFNMvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uZFNcvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2uXQAcvqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uXQAsvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2uXQA8vqEeiFVY15FFOcVg" points="[-15, 0, 855, -10]$[-845, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uZFNsvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uZFN8vqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2uZsQMvqEeiFVY15FFOcVg" type="4001" element="_2pldtsvqEeiFVY15FFOcVg" source="_mioBN8vqEeiFVY15FFOcVg" target="_miZXsMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2uZsRMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uZsRcvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uZsRsvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uZsR8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2uZsSMvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2uZsScvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2uZsQcvqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2uZsQsvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2uZsQ8vqEeiFVY15FFOcVg" points="[-15, 0, 965, -10]$[-955, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uaTUMvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2uaTUcvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2ubhcMvqEeiFVY15FFOcVg" type="4001" element="_2plducvqEeiFVY15FFOcVg" source="_mioBPMvqEeiFVY15FFOcVg" target="_miZXsMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2ubhdMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ubhdcvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2ubhdsvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ubhd8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2ubheMvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ubhecvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2ubhccvqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2ubhcsvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2ubhc8vqEeiFVY15FFOcVg" points="[-15, 0, 1055, -10]$[-1045, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2ucIgMvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2ucIgcvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2ucIgsvqEeiFVY15FFOcVg" type="4001" element="_2pohAMvqEeiFVY15FFOcVg" source="_mioBPMvqEeiFVY15FFOcVg" target="_mikW0MvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2ucIhsvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ucIh8vqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2ucIiMvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ucIicvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2ucIisvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ucIi8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2ucIg8vqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2ucIhMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2ucIhcvqEeiFVY15FFOcVg" points="[-15, 0, 395, -10]$[-385, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2ucvkMvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2ucvkcvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2ucvksvqEeiFVY15FFOcVg" type="4001" element="_2ppIEMvqEeiFVY15FFOcVg" source="_mioBPMvqEeiFVY15FFOcVg" target="_minaIMvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2udWoMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2udWocvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2udWosvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2udWo8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2udWpMvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2udWpcvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2ucvk8vqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2ucvlMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2ucvlcvqEeiFVY15FFOcVg" points="[-15, 0, 285, -10]$[-275, 9, 25, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2ud9sMvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2ud9scvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2ud9ssvqEeiFVY15FFOcVg" type="4001" element="_2ppvIMvqEeiFVY15FFOcVg" source="_mioBPMvqEeiFVY15FFOcVg" target="_mioBMsvqEeiFVY15FFOcVg">
+          <children xmi:type="notation:Node" xmi:id="_2u0jAMvqEeiFVY15FFOcVg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2u0jAcvqEeiFVY15FFOcVg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2u1KEMvqEeiFVY15FFOcVg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2u1KEcvqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2u1KEsvqEeiFVY15FFOcVg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2u1KE8vqEeiFVY15FFOcVg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2ud9s8vqEeiFVY15FFOcVg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2ud9tMvqEeiFVY15FFOcVg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2ud9tcvqEeiFVY15FFOcVg" points="[-15, 0, 175, -10]$[-165, 8, 25, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2u2_QMvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2u2_QcvqEeiFVY15FFOcVg" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1pMvqEeiFVY15FFOcVg" name="Jean Jaures" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.0"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.0"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1pcvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1psvqEeiFVY15FFOcVg" name="Capitole" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.1"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.1"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1p8vqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1qMvqEeiFVY15FFOcVg" name="Esquirol" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.2"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.2"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1qcvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1qsvqEeiFVY15FFOcVg" name="Saint Cyprien" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.3"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.3"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1q8vqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1rMvqEeiFVY15FFOcVg" name="Patte d'oie" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.4"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.4"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1rcvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1rsvqEeiFVY15FFOcVg" name="Arenes" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.5"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.5"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1r8vqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1sMvqEeiFVY15FFOcVg" name="Francois Verdier" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.6"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.6"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1scvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1ssvqEeiFVY15FFOcVg" name="Carmes" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.7"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.7"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1s8vqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UlP1tMvqEeiFVY15FFOcVg" name="Palais de Justice" visible="false" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.8"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.8"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_UlP1tcvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mhc8gMvqEeiFVY15FFOcVg" name="Jean Jaures" incomingEdges="_2pldtsvqEeiFVY15FFOcVg _2plducvqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.0"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.0"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhdjkMvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mheKoMvqEeiFVY15FFOcVg" name="Capitole" incomingEdges="_2plds8vqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.1"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.1"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mheKocvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mheKosvqEeiFVY15FFOcVg" name="Esquirol" incomingEdges="_2pldsMvqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.2"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.2"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhf_0MvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mhgm4MvqEeiFVY15FFOcVg" name="Saint Cyprien" incomingEdges="_2pjog8vqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.3"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.3"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhjDIMvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mhmtgMvqEeiFVY15FFOcVg" name="Patte d'oie" incomingEdges="_2pjogMvqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.4"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.4"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhmtgcvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mhoisMvqEeiFVY15FFOcVg" name="Arenes" incomingEdges="_2pHjoMvqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.5"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.5"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhoiscvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mhoissvqEeiFVY15FFOcVg" name="Francois Verdier" incomingEdges="_2pohAMvqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.6"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.6"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhois8vqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mhupUMvqEeiFVY15FFOcVg" name="Carmes" incomingEdges="_2ppIEMvqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.7"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.7"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhupUcvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mhvQYMvqEeiFVY15FFOcVg" name="Palais de Justice" incomingEdges="_2ppvIMvqEeiFVY15FFOcVg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="network:Station" href="Toulouse.xmi#//@stations.8"/>
+      <semanticElements xmi:type="network:Station" href="Toulouse.xmi#//@stations.8"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_mhyTsMvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mh6PgMvqEeiFVY15FFOcVg" name="A" outgoingEdges="_2pHjoMvqEeiFVY15FFOcVg _2pjogMvqEeiFVY15FFOcVg _2pjog8vqEeiFVY15FFOcVg _2pldsMvqEeiFVY15FFOcVg _2plds8vqEeiFVY15FFOcVg _2pldtsvqEeiFVY15FFOcVg" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <semanticElements xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_mh7doMvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='lineNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='lineNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_miJgEMvqEeiFVY15FFOcVg" name="B" outgoingEdges="_2plducvqEeiFVY15FFOcVg _2pohAMvqEeiFVY15FFOcVg _2ppIEMvqEeiFVY15FFOcVg _2ppvIMvqEeiFVY15FFOcVg" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.1"/>
+      <semanticElements xmi:type="network:Line" href="Toulouse.xmi#//@lines.1"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_miJgEcvqEeiFVY15FFOcVg" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='lineNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='lineNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2pHjoMvqEeiFVY15FFOcVg" sourceNode="_mh6PgMvqEeiFVY15FFOcVg" targetNode="_mhoisMvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pIxwMvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2pIxwcvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2pjogMvqEeiFVY15FFOcVg" sourceNode="_mh6PgMvqEeiFVY15FFOcVg" targetNode="_mhmtgMvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pjogcvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2pjogsvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2pjog8vqEeiFVY15FFOcVg" sourceNode="_mh6PgMvqEeiFVY15FFOcVg" targetNode="_mhgm4MvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pk2oMvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2pk2ocvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2pldsMvqEeiFVY15FFOcVg" sourceNode="_mh6PgMvqEeiFVY15FFOcVg" targetNode="_mheKosvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pldscvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2pldssvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2plds8vqEeiFVY15FFOcVg" sourceNode="_mh6PgMvqEeiFVY15FFOcVg" targetNode="_mheKoMvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pldtMvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2pldtcvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2pldtsvqEeiFVY15FFOcVg" sourceNode="_mh6PgMvqEeiFVY15FFOcVg" targetNode="_mhc8gMvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pldt8vqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2plduMvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2plducvqEeiFVY15FFOcVg" sourceNode="_miJgEMvqEeiFVY15FFOcVg" targetNode="_mhc8gMvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pnS4MvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2pn58MvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2pohAMvqEeiFVY15FFOcVg" sourceNode="_miJgEMvqEeiFVY15FFOcVg" targetNode="_mhoissvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2pohAcvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2pohAsvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2ppIEMvqEeiFVY15FFOcVg" sourceNode="_miJgEMvqEeiFVY15FFOcVg" targetNode="_mhupUMvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2ppIEcvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2ppIEsvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2ppvIMvqEeiFVY15FFOcVg" sourceNode="_miJgEMvqEeiFVY15FFOcVg" targetNode="_mhvQYMvqEeiFVY15FFOcVg">
+      <target xmi:type="network:Line" href="Toulouse.xmi#//@lines.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2ppvIcvqEeiFVY15FFOcVg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2ppvIsvqEeiFVY15FFOcVg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@edgeMappings[name='']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_UlP1tsvqEeiFVY15FFOcVg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/com.city.network.sirius/description/city.odesign#//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer"/>
+    <target xmi:type="network:City" href="Toulouse.xmi#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" name="city" version="12.0.0.2017041100">
-  <ownedViewpoints name="CityViewpoint" label="City Network Viewpoint" modelFileExtension="network">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" documentation="THis is the default representation for lines and stations in a city." name="network" label="City Network" enablePopupBars="true">
-      <metamodel href="http://com.city.network/1.0#/"/>
-      <defaultLayer name="Default"/>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="city" version="12.0.0.2017041100">
+  <ownedViewpoints name="CityViewpoint" label="City Network Viewpoint" modelFileExtension="xmi">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" documentation="THis is the default representation for lines and stations in a city." name="network" label="City Network" domainClass="City" enablePopupBars="true">
+      <metamodel href="../../com.city.network/model/network.ecore#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="stationNode" domainClass="network::Station">
+          <style xsi:type="style:SquareDescription" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="lineNode" domainClass="Line">
+          <style xsi:type="style:EllipseNodeDescription" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings sourceMapping="//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='lineNode']" targetMapping="//@ownedViewpoints[name='CityViewpoint']/@ownedRepresentations[name='network']/@defaultLayer/@nodeMappings[name='stationNode']" targetFinderExpression="feature:stations">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
       <nodeMappings name="stationNode" label="Station"/>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="com.city.network.sirius.Services"/>
